@@ -3,6 +3,7 @@ import Counter from "./patterns/control&UncontrolComp/Counter";
 import AutoFoucsInput from "./patterns/control&UncontrolComp/AutoFoucsInput";
 import CounterRef from "./patterns/control&UncontrolComp/CounterRef";
 import FeedbackForm from "./patterns/control&UncontrolComp/messy/FeedbackForm";
+import Form from "./patterns/control&UncontrolComp/Form";
 
 
 const App = () => {
@@ -10,7 +11,8 @@ const App = () => {
     {/* <Counter/>
     <AutoFoucsInput/> */}
     {/* <CounterRef/> */}
-    <FeedbackForm/>
+    {/* <FeedbackForm/> */}
+    <Form/>
   </div>;
 };
 
