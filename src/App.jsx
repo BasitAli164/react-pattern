@@ -1,35 +1,132 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+import ProductCart from "./components/productCart";
+import shopingBat from "./assets/ladiesbag.png";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <div className="p-20 flex gap-10  flex-wrap">
+      <ProductCart
+        img={shopingBat}
+        title={"Stylish Bag"}
+        children={
+          <>
+            <p>180 Rs./</p>
+            <button className="bg-amber-300 border py-2 px-5 rounded-xl">
+              Add to Cart
+            </button>
+          </>
+        }
+      />
+      <ProductCart
+        img={shopingBat}
+        title={"Stylish Bag"}
+        children={
+          <>
+            <p>180 Rs./</p>
+            <button className="bg-amber-300 border py-2 px-5 rounded-xl">
+              add to Cart
+            </button>
+          </>
+        }
+      />
+      <ProductCart
+        img={shopingBat}
+        title={"Stylish Bag"}
+        children={
+          <>
+            <p>180 Rs./</p>
+            <button className="bg-amber-300 border py-2 px-5 rounded-xl">
+              Delete 
+            </button>
+          </>
+        }
+      />
+      <ProductCart
+        img={shopingBat}
+        title={"Stylish Bag"}
+        children={
+          <>
+            <p>180 Rs./</p>
+            <button className="bg-amber-300 border py-2 px-5 rounded-xl">
+              Remove to Cart
+            </button>
+          </>
+        }
+      />
+      <ProductCart
+        img={shopingBat}
+        title={"Stylish Bag"}
+        children={
+          <>
+            <p>180 Rs./</p>
+            <button className="bg-amber-300 border py-2 px-5 rounded-xl">
+              Remove to Cart
+            </button>
+          </>
+        }
+      />
+      <ProductCart
+        img={shopingBat}
+        title={"Stylish Bag"}
+        children={
+          <>
+            <p>180 Rs./</p>
+            <button className="bg-amber-300 border py-2 px-5 rounded-xl">
+              Remove to Cart
+            </button>
+          </>
+        }
+      />
+      <ProductCart
+        img={shopingBat}
+        title={"Stylish Bag"}
+        children={
+          <>
+            <p>180 Rs./</p>
+            <button className="bg-amber-300 border py-2 px-5 rounded-xl">
+              Remove to Cart
+            </button>
+          </>
+        }
+      />
+      <ProductCart
+        img={shopingBat}
+        title={"Stylish Bag"}
+        children={
+          <>
+            <p>180 Rs./</p>
+            <button className="bg-amber-300 border py-2 px-5 rounded-xl">
+              Remove to Cart
+            </button>
+          </>
+        }
+      />
+      <ProductCart
+        img={shopingBat}
+        title={"Stylish Bag"}
+        children={
+          <>
+            <p>180 Rs./</p>
+            <button className="bg-amber-300 border py-2 px-5 rounded-xl">
+              Remove to Cart
+            </button>
+          </>
+        }
+      />
+      <ProductCart
+        img={shopingBat}
+        title={"Stylish Bag"}
+        children={
+          <>
+            <p>180 Rs./</p>
+            <button className="bg-amber-300 border py-2 px-5 rounded-xl">
+              Remove to Cart
+            </button>
+          </>
+        }
+      />
+    </div>
+  );
+};
 
-export default App
+export default App;
