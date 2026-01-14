@@ -12,6 +12,14 @@
             Note:
                 Most of the time we work with useState in controlled component but we can use both as well. ☝️
     UnControlled Component:
-            In a react, an uncontrolled component is also a form input elements like inputs, select, button ,textarea,etc whose value controlled by useRef/ref means with dom, here we can deal directly with dom element.
+            In a react, an uncontrolled component is also a form input elements like inputs, select, button ,textarea,etc whose value controlled by useRef/ref or use vanila JS means with dom, here we can deal directly with dom element.
             Note:
                 Most of the time we avoid to use uncontrolled component for form or we build small form here if we build? otherwise we don't use this.
+    
+
+    What i learn from this pattern:
+    1.  Explore and understand controlled and uncontrolled form 
+    2.  Differentiate between useState and useRef hook clearly
+    3.  useState use for managing data and useRef for validation like focus()
+    4.  use both hooks in a component
+
