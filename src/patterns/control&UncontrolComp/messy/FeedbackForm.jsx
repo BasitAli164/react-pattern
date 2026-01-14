@@ -47,7 +47,7 @@ const FeedbackForm = () => {
         className="border rounded-2xl p-2 my-3"
         placeholder="Your message"
       ></textarea>
-      <button type="submit">Send FeedBack</button>
+      <button type="submit" className="bg-purple-500 text-white p-1 rounded w-full">Send FeedBack</button>
     </form>
   );
 };
