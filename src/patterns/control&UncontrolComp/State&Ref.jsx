@@ -1,12 +1,4 @@
-
-
-//! In this component i use both hooks means useState and useRef but the use case is totally different ...I use useState for manage the data and useRef use to deal dom element means in this case i use useRef or ref if the user don't give the data or value in the field then there that input fields automtically apply focus property so this senario we can write messy component 
-
-
-
-
-
-
+//! In this component i use both hooks means useState and useRef but the use case is totally different ...I use useState for manage the data and useRef use to deal dom element means in this case i use useRef or ref if the user don't give the data or value in the field then there that input fields automtically apply focus property so this senario we can write messy component
 
 import React, { useRef, useState } from "react";
 
@@ -29,13 +21,13 @@ const MixtureOfBothHook = () => {
       nameRef.current.focus();
       return;
     }
-    if(!form.email){
-        emailRef.current.focus();
-        return;
+    if (!form.email.includes("@")) {
+      emailRef.current.focus();
+      return;
     }
-    if(!form.message){
-        mesgReg.current.focus();
-        return;
+    if (!form.message) {
+      mesgReg.current.focus();
+      return;
     }
     console.log(form);
   };
