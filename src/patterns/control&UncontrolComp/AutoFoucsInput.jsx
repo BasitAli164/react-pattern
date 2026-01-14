@@ -1,3 +1,6 @@
+
+
+//! Uncontrolled component example
 import React, { useEffect, useRef } from 'react'
 
 const AutoFoucsInput = () => {
@@ -17,3 +20,6 @@ const AutoFoucsInput = () => {
 }
 
 export default AutoFoucsInput
+
+//? why called this  component is uncontrolled component 
+// becuase this component only  work with dom becuase here we are use useRef and ref which refers to dom and don't use any react state here

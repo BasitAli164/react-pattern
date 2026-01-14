@@ -1,8 +1,9 @@
-import React, { useRef, useState } from 'react'
+
+//! Controlled component example 
+import React, {  useState } from 'react'
 
 const Counter = () => {
     const [count,setCount]=useState(0);
-    const ref=useRef()
 
     const increment=()=>{
         setCount(count+1)
@@ -16,3 +17,6 @@ const Counter = () => {
 }
 
 export default Counter
+
+//? why called this  component is controlled component 
+// becuase this component only use react state not work with dom(useRef or ref)
