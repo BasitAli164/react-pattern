@@ -10,12 +10,12 @@ const App = () => {
   return (
     <div className="p-20 flex gap-20">
       {/* Controlled & Uncontrolled Pattern Start From Here */}
-      <Counter/>
-    <AutoFoucsInput/>
-      <CounterRef/>
-      <FeedbackForm/>
-      <Form/>
-      <MixtureOfBothHook/>
+      {/* <Counter />
+      <AutoFoucsInput />
+      <CounterRef />
+      <FeedbackForm />
+      <Form />
+      <MixtureOfBothHook /> */}
       {/* Controlled & Uncontrolled Pattern End From Here */}
     </div>
   );
