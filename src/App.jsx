@@ -41,8 +41,8 @@ const App = () => {
           <p>This is a modal built with the compound component pattern</p>
         </Modal.Body>
         <Modal.Footer>
-          <button>Close</button>
-          <button>Do Action</button>
+          <button onClick={()=>setIsOpen(false)}>Close</button>
+          <button onClick={()=>alert("Action Performed!")}>Do Action</button>
         </Modal.Footer>
       </Modal>
     </div>

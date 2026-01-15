@@ -25,6 +25,7 @@
 
 
 
-    
+
 ## 2- Compond Component Pattern
+    It's is a React pattern that allows parents and child components to work together    seamlessly while giving developers flexible composition.
 
