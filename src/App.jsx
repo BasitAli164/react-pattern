@@ -8,6 +8,7 @@ import MixtureOfBothHook from "./patterns/control&UncontrolComp/State&Ref";
 import Model from "./patterns/compondComponentPattern/messy/model";
 import "./App.css";
 import Modal from "./patterns/compondComponentPattern/modal";
+import Card from "./patterns/compondComponentPattern/Card";
 const App = () => {
 
   const [isOpen,setIsOpen]=useState(false);
@@ -45,6 +46,19 @@ const App = () => {
           <button onClick={()=>alert("Action Performed!")}>Do Action</button>
         </Modal.Footer>
       </Modal>
+
+
+      <Card >
+        <Card.Header>
+          <h1>Card Header</h1>
+        </Card.Header>
+        <Card.Body>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam eum quod totam, vel officiis laboriosam reiciendis? Ducimus rem impedit eius magnam cumque aspernatur, repellat tempora porro cum officiis voluptatum vero?</p>
+        </Card.Body>
+        <Card.Footer>
+          <button className="bg-amber-400">Add to Card</button>
+        </Card.Footer>
+      </Card>
     </div>
   );
 };
