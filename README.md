@@ -27,7 +27,7 @@
 
 
 ## 2- Compond Component Pattern
-    It's is a React pattern that allows parents and child components to work together    seamlessly while giving developers flexible composition.
+    It's is a React pattern that allows parents and child components to work together seamlessly while giving developers flexible composition.
     why use it?
         It makes UI libraries like modals,tabs,accordions,menus,etc. easier to build and use
 
