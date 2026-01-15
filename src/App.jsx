@@ -5,10 +5,11 @@ import CounterRef from "./patterns/control&UncontrolComp/CounterRef";
 import FeedbackForm from "./patterns/control&UncontrolComp/messy/FeedbackForm";
 import Form from "./patterns/control&UncontrolComp/Form";
 import MixtureOfBothHook from "./patterns/control&UncontrolComp/State&Ref";
-
+import Model from "./patterns/compondComponentPattern/messy/model";
+import './App.css'
 const App = () => {
   return (
-    <div className="p-20 flex gap-20">
+    <div className="flex flex-col items-center">
       {/* Controlled & Uncontrolled Pattern Start From Here */}
       {/* <Counter />
       <AutoFoucsInput />
@@ -17,6 +18,16 @@ const App = () => {
       <Form />
       <MixtureOfBothHook /> */}
       {/* Controlled & Uncontrolled Pattern End From Here */}
+
+
+
+      <Model
+      title="Delete Account"
+      body="Are you sure you want to delete your account?"
+      primaryAction={<button>Delete</button>}
+      secondaryAction={<button>Cancel</button>}
+      
+      />
     </div>
   );
 };

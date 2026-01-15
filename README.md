@@ -23,3 +23,8 @@
     3.  useState use for managing data and useRef for validation like focus()
     4.  use both hooks in a component
 
+
+
+    
+## 2- Compond Component Pattern
+
