@@ -2,7 +2,7 @@
 
     The following 15 pattern we studied in react....
 
-## 1- Controlled and Uncontrolled Component
+## 2- Controlled and Uncontrolled Component
             This pattern mostly work with form
 
     Controlled Component:
@@ -26,8 +26,13 @@
 
 
 
-## 2- Compond Component Pattern
+## 3- Compond Component Pattern
     It's is a React pattern that allows parents and child components to work together seamlessly while giving developers flexible composition.
     why use it?
         It makes UI libraries like modals,tabs,accordions,menus,etc. easier to build and use
+## 4- Render Props Pattern
+    It's is a React pattern that use a prop but the prop or the value of props basically expects a function which must be return a JSX. 
+    Usage: Mostly this pattern usage is to reduce code or means if there are tow component with same logic but the ui is different so in that case this pattern is used like find position of car and bike in a certain search box 
+    Note:
+        Mostly this pattern avoid to use becuase i impact the performmance of application, the alternative of this pattern is the hook which is studied in Pattern-6 
 
