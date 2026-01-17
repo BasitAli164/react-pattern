@@ -5,6 +5,7 @@
 ## 1- Container Presenter Component Pattern
 
 ## 2- Controlled and Uncontrolled Component
+
             This pattern mostly work with form
 
     Controlled Component:
@@ -17,35 +18,35 @@
             In a react, an uncontrolled component is also a form input elements like inputs, select, button ,textarea,etc whose value controlled by useRef/ref or use vanila JS means with dom, here we can deal directly with dom element.
             Note:
                 Most of the time we avoid to use uncontrolled component for form or we build small form here if we build? otherwise we don't use this.
-    
+
 
     What i learn from this pattern:
-    1.  Explore and understand controlled and uncontrolled form 
+    1.  Explore and understand controlled and uncontrolled form
     2.  Differentiate between useState and useRef hook clearly
     3.  useState use for managing data and useRef for validation like focus()
     4.  use both hooks in a component
 
-
-
-
 ## 3- Compond Component Pattern
+
     It's is a React pattern that allows parents and child components to work together seamlessly while giving developers flexible composition.
     why use it?
         It makes UI libraries like modals,tabs,accordions,menus,etc. easier to build and use
-## 4- Render Props Pattern
-    It's is a React pattern that use a prop but the prop or the value of props basically expects a function which must be return a JSX. 
-    Usage: Mostly this pattern usage is to reduce code or means if there are tow component with same logic but the ui is different so in that case this pattern is used like find position of car and bike in a certain search box 
-    Note:
-        Mostly this pattern avoid to use becuase i impact the performmance of application, the alternative of this pattern is the hook which is studied in Pattern-6 
 
+## 4- Render Props Pattern
+
+    It's is a React pattern that use a prop but the prop or the value of props basically expects a function which must be return a JSX.
+    Usage: Mostly this pattern usage is to reduce code or means if there are tow component with same logic but the ui is different so in that case this pattern is used like find position of car and bike in a certain search box
+    Note:
+        Mostly this pattern avoid to use becuase i impact the performmance of application, the alternative of this pattern is the hook which is studied in Pattern-6
 
 ## 5- Higher Order Component Pattern (HoC)
+
     It is a function that takes component and return a new component. In other words, it's like a component factory that add certain new feature or new enhnacement in exiting component and return that enhance component to you/us.
     practical required internet so it do later
-   
+
     Usecases
     Use case of this pattern is when multiple component share same logics such as handling loading,handling error state,authentication,permission check,login senario,data fetching wrappers
-    
+
     Pitfalls:
     This pattern is more powerful  but there are few things to watch out befor use this pattern because this pattern mostly see in lagacy code means that people needed reusibility, enhancing component, for these they had few pattern this time one was render props, and this one which is HOC "but today we have a modern replacement of it(Render props and HOC) which is hook"
     One of the major problem of HoC pattern is when we have to nest too many HOC that makes debugging really really hard we also called it composition hell
