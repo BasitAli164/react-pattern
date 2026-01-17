@@ -40,5 +40,15 @@
 
 
 ## 5- Higher Order Component Pattern (HoC)
-    It is a function that takes component and return a new component. In other words, it's like a component factory that add certain new feature or new enhnacement in exiting component and return that enhance component to you/us
+    It is a function that takes component and return a new component. In other words, it's like a component factory that add certain new feature or new enhnacement in exiting component and return that enhance component to you/us.
+    practical required internet so it do later
+   
+    Usecases
+    Use case of this pattern is when multiple component share same logics such as handling loading,handling error state,authentication,permission check,login senario,data fetching wrappers
+    
+    Pitfalls:
+    This pattern is more powerful  but there are few things to watch out befor use this pattern because this pattern mostly see in lagacy code means that people needed reusibility, enhancing component, for these they had few pattern this time one was render props, and this one which is HOC "but today we have a modern replacement of it(Render props and HOC) which is hook"
+    One of the major problem of HoC pattern is when we have to nest too many HOC that makes debugging really really hard we also called it composition hell
 
+    Note:
+        Mostly this pattern avoid to use becuase if we have to many nest HOC then there we have problem to debug code therefore we avoid to use this pattern with mordern react but in lagacy code we can see or in our early code , the alternative of this pattern is the hook which is studied in Pattern-
