@@ -2,6 +2,8 @@
 
     The following 15 pattern we studied in react....
 
+## 1- Container Presenter Component Pattern
+
 ## 2- Controlled and Uncontrolled Component
             This pattern mostly work with form
 
@@ -35,4 +37,8 @@
     Usage: Mostly this pattern usage is to reduce code or means if there are tow component with same logic but the ui is different so in that case this pattern is used like find position of car and bike in a certain search box 
     Note:
         Mostly this pattern avoid to use becuase i impact the performmance of application, the alternative of this pattern is the hook which is studied in Pattern-6 
+
+
+## 5- Higher Order Component Pattern (HoC)
+    It is a function that takes component and return a new component. In other words, it's like a component factory that add certain new feature or new enhnacement in exiting component and return that enhance component to you/us
 
