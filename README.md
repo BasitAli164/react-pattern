@@ -54,7 +54,7 @@
     Note:
         Mostly this pattern avoid to use becuase if we have to many nest HOC then there we have problem to debug code therefore we avoid to use this pattern with mordern react but in lagacy code we can see or in our early code , the alternative of this pattern is the hook which is studied in Pattern-
 
-## The Custom Hook Pattern
+## 6- The Custom Hook Pattern
 
     what is hook?
     A Hook in react is simply a special function that lets you hook into react feature, what are those react features now react provide you the mechanism to handle state, react provide you the mechanism to handle effect,sideEffects,context
@@ -90,3 +90,13 @@
         2. Avoid unnecessary re-rendering
         3. Handle Cleanup(when you handling any event then must write cleanup logic of that envet in hook)
         4. Manage dependencies array
+
+## 7- Provider-Context Pattern
+    The provider pattern is about providing something so what it provides, it provide data, functionality for your/our entire application or part of application , this pattern avoide the props drilling.
+
+    Steps of this pattern:
+    1. Create the Context
+    2. Create the Provider
+    3. Wrap the component Hierarchy with provider
+    4. Create Hook(custom) to make the Context available
+    5. Use the data from Context whenever needed
