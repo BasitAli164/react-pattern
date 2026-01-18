@@ -9,6 +9,7 @@ import Model from "./patterns/compondComponentPattern/messy/model";
 import "./App.css";
 import Modal from "./patterns/compondComponentPattern/modal";
 import Card from "./patterns/compondComponentPattern/Card";
+import ThemeSwitcher from "./patterns/customHookPattern/ThemeSwitcher";
 const App = () => {
 
   const [isOpen,setIsOpen]=useState(false);
@@ -33,7 +34,7 @@ const App = () => {
       
       /> */}
       {/* With pattern */}
-      <button onClick={()=>setIsOpen(true)} className="bg-amber-400 px-4 py-2 rounded-lg mt-10 font-bold">Open Modal </button>
+      {/* <button onClick={()=>setIsOpen(true)} className="bg-amber-400 px-4 py-2 rounded-lg mt-10 font-bold">Open Modal </button>
       <Modal isOpen={isOpen} onClose={()=>setIsOpen(false)}>
         <Modal.Header>
           <h1>Welcome!</h1>
@@ -58,7 +59,10 @@ const App = () => {
         <Card.Footer>
           <button className="bg-amber-400">Add to Card</button>
         </Card.Footer>
-      </Card>
+      </Card> */}
+      {/* Compound component Pattern End Here */}
+      
+      <ThemeSwitcher/>
     </div>
   );
 };

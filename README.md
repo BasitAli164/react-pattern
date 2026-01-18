@@ -54,8 +54,8 @@
     Note:
         Mostly this pattern avoid to use becuase if we have to many nest HOC then there we have problem to debug code therefore we avoid to use this pattern with mordern react but in lagacy code we can see or in our early code , the alternative of this pattern is the hook which is studied in Pattern-
 
-
 ## The Custom Hook Pattern
+
     what is hook?
     A Hook in react is simply a special function that lets you hook into react feature, what are those react features now react provide you the mechanism to handle state, react provide you the mechanism to handle effect,sideEffects,context
 
@@ -65,3 +65,28 @@
     Rules of Hooks:
     1. Only call the hooks at the Top-level
     2. Call hook only from React Functions
+
+    Custom Hooks:
+        This is the clean mordern way to reuse statful logic between component but make sure the name of custom hook must be start with "use".
+        The goal of the custom hook is to separate out the reusible logic from the component and place it inside the hook so the hook can be reuse for multiple components.
+
+    UseCases:
+    we can use this patter with the following idea which are or by using this pattern we can make the following type of custom hooks which are:
+
+        1. useLocalStoarge(): to perform localStoarge opeartion
+        2. useDebounce(): search for this
+        3. usePrevious():  to see previous values or state
+        4. useScrollPosition(): to handle scrolling of page
+        5. useOnlineStatus(): to check online status
+        6. useClipboard(): to handle that logice where we copy some text and past from aother
+        7. useMediaQuery(): to handle device screen 
+        8. useKeyPress(): to handle key press event if you want to perform a different function on them 
+        9. useClickOutside(): to handle mouse clik form outside it range like dialog when we click outside the dialog then automatically close the dialog and etc.
+        10. useInterval(): search for this
+        11. useFetch(): to handle api calls 
+
+    PitFall:
+        1. Do not over engineer
+        2. Avoid unnecessary re-rendering
+        3. Handle Cleanup(when you handling any event then must write cleanup logic of that envet in hook)
+        4. Manage dependencies array
