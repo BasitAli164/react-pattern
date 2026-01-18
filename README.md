@@ -53,3 +53,15 @@
 
     Note:
         Mostly this pattern avoid to use becuase if we have to many nest HOC then there we have problem to debug code therefore we avoid to use this pattern with mordern react but in lagacy code we can see or in our early code , the alternative of this pattern is the hook which is studied in Pattern-
+
+
+## The Custom Hook Pattern
+    what is hook?
+    A Hook in react is simply a special function that lets you hook into react feature, what are those react features now react provide you the mechanism to handle state, react provide you the mechanism to handle effect,sideEffects,context
+
+    Built-in Hooks:
+    useState,useRef,useEffect,useReducer,useContext,etc
+
+    Rules of Hooks:
+    1. Only call the hooks at the Top-level
+    2. Call hook only from React Functions
