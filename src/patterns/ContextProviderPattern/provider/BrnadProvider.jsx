@@ -1,3 +1,5 @@
+//? this code write with react 19 
+
 import React, { useEffect, useState } from "react";
 import { BrandContext } from "../context";
 
@@ -5,12 +7,12 @@ const BrnadProvider = ({ children }) => {
   const [brand, setBrand] = useState(null);
 
   useEffect(() => {
-    const data = { name: "Basit", Color: "#765e45" };
+    const data = { "name": "Basit", "Color": "#765e45" };
     setBrand(data);
   }, []);
-  return <BrandContext.Provider value={{brand}}>
+  return <BrandContext value={{brand}}>
     {children}
-  </BrandContext.Provider>;
+  </BrandContext>;
 };
 
 export default BrnadProvider;
