@@ -11,30 +11,32 @@ import Modal from "./patterns/compondComponentPattern/modal";
 import Card from "./patterns/compondComponentPattern/Card";
 import ThemeSwitcher from "./patterns/customHookPattern/ThemeSwitcher";
 const App = () => {
-
-  const [isOpen,setIsOpen]=useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="flex flex-col items-center">
-      {/* Controlled & Uncontrolled Pattern Start From Here */}
-      {/* <Counter />
+      <div>
+        {/* Controlled & Uncontrolled Pattern Start From Here */}
+        {/* <Counter />
       <AutoFoucsInput />
       <CounterRef />
       <FeedbackForm />
       <Form />
       <MixtureOfBothHook /> */}
-      {/* Controlled & Uncontrolled Pattern End From Here */}
+        {/* Controlled & Uncontrolled Pattern End From Here */}
+      </div>
 
-      {/* Compound component pattern start from here */}
-      {/* Messy code */}
-      {/* <Model
+      <div>
+        {/* Compound component pattern start from here */}
+        {/* Messy code */}
+        {/* <Model
       title="Delete Account"
       body="Are you sure you want to delete your account?"
       primaryAction={<button>Delete</button>}
       secondaryAction={<button>Cancel</button>}
       
       /> */}
-      {/* With pattern */}
-      {/* <button onClick={()=>setIsOpen(true)} className="bg-amber-400 px-4 py-2 rounded-lg mt-10 font-bold">Open Modal </button>
+        {/* With pattern */}
+        {/* <button onClick={()=>setIsOpen(true)} className="bg-amber-400 px-4 py-2 rounded-lg mt-10 font-bold">Open Modal </button>
       <Modal isOpen={isOpen} onClose={()=>setIsOpen(false)}>
         <Modal.Header>
           <h1>Welcome!</h1>
@@ -60,9 +62,22 @@ const App = () => {
           <button className="bg-amber-400">Add to Card</button>
         </Card.Footer>
       </Card> */}
-      {/* Compound component Pattern End Here */}
-      
-      <ThemeSwitcher/>
+        {/* Compound component Pattern End Here */}
+      </div>
+
+      <div>
+        {/* Custom hook Pattern Start From Here */}
+        {/* <ThemeSwitcher /> */}
+        {/* Custom hook Pattern End From Here */}
+      </div>
+
+      <div>
+        {/* Provider Pattern Start From Here */}
+
+        
+        {/* Provider Pattern End From Here */}
+
+      </div>
     </div>
   );
 };
