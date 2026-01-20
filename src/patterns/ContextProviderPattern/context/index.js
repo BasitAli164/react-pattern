@@ -1,6 +1,7 @@
 import { createContext } from "react";
 
 const ThemeContext=createContext();
+const BrandContext=createContext();
 
 
 
@@ -8,4 +9,4 @@ const ThemeContext=createContext();
 
 
 
-export {ThemeContext}
+export {ThemeContext,BrandContext}

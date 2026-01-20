@@ -16,7 +16,7 @@ const App = () => {
   const [isOpen, setIsOpen] = useState(false);
   const {theme,toggleTheme}=useTheme(); 
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center h-screen w-full">
       <div>
         {/* Controlled & Uncontrolled Pattern Start From Here */}
         {/* <Counter />
@@ -74,7 +74,7 @@ const App = () => {
         {/* Custom hook Pattern End From Here */}
       </div>
 
-      <div className={`border w-96 h-96 rounded-lg p-2 ${theme?"bg-gray-100":"bg-gray-800"}`}>
+      <div className={`border w-96 h-96 rounded-lg p-2 text-center ${theme?"bg-gray-100":"bg-gray-800"}`}>
         {/* Provider Pattern Start From Here */}
           <button className={`px-7 py-2 rounded-md font-medium text-xl cursor-pointer  ${theme?"bg-gray-800 text-gray-100":"bg-gray-100 text-gray-800"}`} onClick={()=>toggleTheme(!theme)}>Click</button>
 
