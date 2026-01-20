@@ -1,11 +1,9 @@
-//? this code write with react 19 
+//? this code write with react 19
 
 import { use } from "react";
 import { BrandContext } from "../context";
 
 const useBrand = () => {
-  const brand = use(BrandContext);
-
-  return brand;
+  return use(BrandContext);
 };
 export default useBrand;
