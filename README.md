@@ -79,11 +79,11 @@
         4. useScrollPosition(): to handle scrolling of page
         5. useOnlineStatus(): to check online status
         6. useClipboard(): to handle that logice where we copy some text and past from aother
-        7. useMediaQuery(): to handle device screen 
-        8. useKeyPress(): to handle key press event if you want to perform a different function on them 
+        7. useMediaQuery(): to handle device screen
+        8. useKeyPress(): to handle key press event if you want to perform a different function on them
         9. useClickOutside(): to handle mouse clik form outside it range like dialog when we click outside the dialog then automatically close the dialog and etc.
         10. useInterval(): search for this
-        11. useFetch(): to handle api calls 
+        11. useFetch(): to handle api calls
 
     PitFall:
         1. Do not over engineer
@@ -92,6 +92,7 @@
         4. Manage dependencies array
 
 ## 7- Provider-Context Pattern
+
     The provider pattern is about providing something so what it provides, it provide data, functionality for your/our entire application or part of application , this pattern avoide the props drilling.
 
     Steps of this pattern:
@@ -99,5 +100,10 @@
     2. Create the Provider
     3. Wrap the component Hierarchy with provider
     4. Create Hook(custom) to make the Context available
-    5. Use the data from Context whenever needed    
+    5. Use the data from Context whenever needed
+
 ## 8- Optimistic UI Pattern
+
+    This is pattern allow us to change our ui immediately when we perform an action ,this pattern don't care about the end point has been success or reject, it change the ui but if the end point has been failed then it again comes on previous value but if it success then this remain the update value
+
+    In this pattern we use react hook like useState, useOptimistic and startTransition , if you want to see an example then go optimisticPattern folder and see LikeButton.jsx code
