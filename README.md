@@ -107,3 +107,6 @@
     This is pattern allow us to change our ui immediately when we perform an action ,this pattern don't care about the end point has been success or reject, it change the ui but if the end point has been failed then it again comes on previous value but if it success then this remain the update value
 
     In this pattern we use react hook like useState, useOptimistic and startTransition , if you want to see an example then go optimisticPattern folder and see LikeButton.jsx code
+
+    UseCase of this pattern:
+        we use this pattern where we required imidiatly change the ui.... like any socail media platform, ecommerce website, chat app, instantly required feedback application like voting , polls, etc
