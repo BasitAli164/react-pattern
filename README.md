@@ -99,4 +99,5 @@
     2. Create the Provider
     3. Wrap the component Hierarchy with provider
     4. Create Hook(custom) to make the Context available
-    5. Use the data from Context whenever needed
+    5. Use the data from Context whenever needed    
+## 8- Optimistic UI Pattern
