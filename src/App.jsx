@@ -18,7 +18,14 @@ const App = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { theme, toggleTheme } = useTheme();
   const brand = useBrand();
-  console.log(brand);
+
+  const [showPassword, setShowPassword] = useState(false);
+  const [password, setPassword] = useState("");
+  if (password.length > 10 && password.length < 15) {
+    console.log("Password is mediu");
+  }
+
+ 
 
   return (
     <div className="flex flex-col items-center justify-center h-screen w-full">
@@ -80,7 +87,7 @@ const App = () => {
       </div>
 
       <div>
-          {/* Provider Pattern Start From Here */}
+        {/* Provider Pattern Start From Here */}
         {/* <div
           className={`border w-96 h-96 rounded-lg p-2 text-center ${theme ? "bg-gray-100" : "bg-gray-800"}`}
         >
@@ -100,14 +107,34 @@ const App = () => {
           </div>
 
         </div> */}
-          {/* Provider Pattern End From Here */}
+        {/* Provider Pattern End From Here */}
       </div>
 
       <div>
-          {/* Optimistic UI Pattern Start From Here */}
+        {/* Optimistic UI Pattern Start From Here */}
 
-          <LikeButton postId={3}/>
-          {/* Optimistic UI Pattern End From Here */}
+        <LikeButton postId={3} />
+        {/* Optimistic UI Pattern End From Here */}
+      </div>
+
+      <div className={`bg-gray-500 p-6 rounded-2xl mt-10 changeBg`} >
+        <input
+          className="border focus:outline-amber-500 w-96 p-2 rounded-xl focus:border-none text-xl text-slate-50"
+          type={`${showPassword ? "text" : "password"}`}
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          name="password"
+        />
+        <button
+          className="mx-5 px-5 py-3 border bg-slate-200 rounded-xl"
+          onClick={() => setShowPassword(!showPassword)}
+        >
+          Show
+        </button>
+
+        {
+          password.length>10 && <p>Weldone</p>
+        }
       </div>
     </div>
   );
