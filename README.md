@@ -111,6 +111,9 @@
     UseCase of this pattern:
         we use this pattern where we required imidiatly change the ui.... like any socail media platform, ecommerce website, chat app, instantly required feedback application like voting , polls, etc
 
-## 9- State Reducer Pattern
+## 9- Slot Pattern
+    A named hole/placeholder inside the component where the consumer can place  UI
+
+
 
 
