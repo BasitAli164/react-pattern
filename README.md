@@ -112,3 +112,5 @@
         we use this pattern where we required imidiatly change the ui.... like any socail media platform, ecommerce website, chat app, instantly required feedback application like voting , polls, etc
 
 ## 9- State Reducer Pattern
+
+

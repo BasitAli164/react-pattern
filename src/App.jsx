@@ -105,9 +105,10 @@ const App = () => {
       <div>
         {/* Optimistic UI Pattern Start From Here */}
 
-        <LikeButton postId={3} />
+        {/* <LikeButton postId={3} /> */}
         {/* Optimistic UI Pattern End From Here */}
       </div>
+      
     </div>
   );
 };
