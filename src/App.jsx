@@ -13,6 +13,7 @@ import ThemeSwitcher from "./patterns/customHookPattern/ThemeSwitcher";
 import useTheme from "./patterns/ContextProviderPattern/hook/useTheme";
 import useBrand from "./patterns/ContextProviderPattern/hook/useBrand";
 import LikeButton from "./patterns/optimisticPattern/LikeButton";
+import DefaultSlotDemo from "./patterns/slotPattern/DefaultSlotDemo";
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -108,7 +109,13 @@ const App = () => {
         {/* <LikeButton postId={3} /> */}
         {/* Optimistic UI Pattern End From Here */}
       </div>
-      
+
+      <div>
+        {/* Slot Pattern Start From Here */}
+        <DefaultSlotDemo/>
+        {/* Slot Pattern End From Here */}
+
+      </div>
     </div>
   );
 };
